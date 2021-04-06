@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">FarmApplication</string>
+    
+    <string name="start_title">PLEASE SELECT TO START WORK (ADDITIONAL)</string>
+    <string name="start_subtitle_operator">Operator</string>
+    <string name="start_subtitle_customer">Customer</string>
+    <string name="start_subtitle_farm">Farm</string>
+    <string name="start_subtitle_field">Field</string>
+    <string name="start_item_name_of_operator">Name Of Operator</string>
+    <string name="start_item_other_name">Other Name</string>
+    <string name="start_item_name_of_customer">Name Of Customer</string>
+    <string name="start_item_another_name_of">Another Name Of</string>
+    <string name="start_item_farm_name">Farm Name</string>
+    <string name="start_item_name_of_a_farm">Name Of A Farm</string>
+    <string name="start_item_field_name">Field Name</string>
+    <string name="start_item_name_of_a_field">Name Of A Field</string>
+    <string name="start_item_field_n_1">Field N 1</string>
+    <string name="start_button_name">Save</string>
 </resources>
