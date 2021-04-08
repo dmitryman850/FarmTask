@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,34 +11,217 @@
         android:id="@+id/tv_start_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/start_title"
+        android:layout_marginHorizontal="59px"
+        android:layout_marginTop="59px"
         android:gravity="center"
+        android:text="@string/start_title"
         android:textColor="@color/colorStartTextBlack"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="59px"
-        android:layout_marginHorizontal="59px"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <ScrollView
         android:id="@+id/scroll_view_start"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="50px"
+        android:layout_marginEnd="26px"
+        android:layout_marginBottom="299px"
+        android:layout_marginTop="171px"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_start_title"
-        android:layout_marginTop="40px">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <TextView
+                android:id="@+id/tv_subtitle_operator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorStartBackgroundSubItem"
+                android:paddingHorizontal="28px"
+                android:paddingTop="24px"
+                android:text="@string/start_subtitle_operator"
+                android:textColor="@color/colorStartTextBlack"
+                android:textSize="35px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/r_group_operator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorStartBackgroundSubItem"
+                android:paddingStart="60px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_operator">
+
+                <RadioButton
+                    android:id="@+id/r_button_name_of_operator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_item_name_of_operator"
+                    android:textColor="@color/colorStartTextBlack"
+                    android:textSize="28px" />
+
+                <RadioButton
+                    android:id="@+id/r_button_other_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/start_item_other_name"
+                    android:textColor="@color/colorStartTextBlack"
+                    android:textSize="28px" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_subtitle_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="74px"
+                android:background="@color/colorStartBackgroundSubItem"
+                android:paddingHorizontal="28px"
+                android:paddingTop="24px"
+                android:text="@string/start_subtitle_customer"
+                android:textColor="@color/colorStartTextBlack"
+                android:textSize="35px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/r_group_operator" />
+
+            <RadioGroup
+                android:id="@+id/r_group_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorStartBackgroundSubItem"
+                android:paddingStart="60px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_customer">
+
+                <RadioButton
+                    android:id="@+id/r_button_name_of_customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/start_item_name_of_customer"
+                    android:textColor="@color/colorStartTextBlack"
+                    android:textSize="28px" />
+
+                <RadioButton
+                    android:id="@+id/r_button_another_name_of"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_item_another_name_of"
+                    android:textColor="@color/colorStartTextBlack"
+                    android:textSize="28px" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_subtitle_farm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="74px"
+                android:background="@color/colorStartBackgroundSubItem"
+                android:paddingHorizontal="28px"
+                android:paddingTop="24px"
+                android:paddingEnd="30px"
+                android:text="@string/start_subtitle_farm"
+                android:textColor="@color/colorStartTextBlack"
+                android:textSize="35px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/r_group_customer" />
+
+            <RadioGroup
+                android:id="@+id/r_group_farm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorStartBackgroundSubItem"
+                android:paddingStart="60px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_subtitle_farm">
+
+                <RadioButton
+                    android:id="@+id/r_button_farm_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_item_farm_name"
+                    android:textColor="@color/colorStartTextBlack"
+                    android:textSize="28px" />
+
+                <RadioButton
+                    android:id="@+id/r_button_name_of_a_farm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_item_name_of_a_farm"
+                    android:textColor="@color/colorStartTextBlack"
+                    android:textSize="28px" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_subtitle_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="74px"
+                android:background="@color/colorStartBackgroundSubItem"
+                android:paddingHorizontal="28px"
+                android:paddingTop="24px"
+                android:paddingEnd="30px"
+                android:text="@string/start_subtitle_field"
+                android:textColor="@color/colorStartTextBlack"
+                android:textSize="35px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/r_group_farm" />
+
+            <RadioGroup
+                android:id="@+id/r_group_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorStartBackgroundSubItem"
+                android:paddingStart="60px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_subtitle_field">
+
+                <RadioButton
+                    android:id="@+id/r_button_field_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_item_field_name"
+                    android:textColor="@color/colorStartTextBlack"
+                    android:textSize="28px" />
+
+                <RadioButton
+                    android:id="@+id/r_button_name_of_a_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_item_name_of_a_field"
+                    android:textColor="@color/colorStartTextBlack"
+                    android:textSize="28px" />
+
+                <RadioButton
+                    android:id="@+id/r_button_field_n1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_item_field_n_1"
+                    android:textColor="@color/colorStartTextBlack"
+                    android:textSize="28px" />
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
 
     <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/start_button_name"
@@ -46,5 +230,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="94px"
         android:layout_marginBottom="116px"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

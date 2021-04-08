@@ -4,7 +4,7 @@
     <!--    StartFragment screen -->
     <color name="colorStartBackground">@color/gray5</color>
     <color name="colorStartTextBlack">@color/black</color>
-    <color name="colorStartBackgroundItem">@color/white</color>
+    <color name="colorStartBackgroundSubItem">@color/white</color>
     <color name="colorStartButtonBackground">@color/green</color>
     <color name="colorStartButtonText">@color/white</color>
     <!--    StartFragment screen -->
