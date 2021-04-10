@@ -7,19 +7,19 @@
     android:paddingHorizontal="36px">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/item1_1"
+        android:id="@+id/item_1_1"
         android:layout_width="0px"
         android:layout_height="241px"
         android:layout_marginTop="290px"
         android:layout_marginEnd="42px"
         android:background="@drawable/main_fragment_background_item"
-        app:layout_constraintEnd_toStartOf="@+id/item1_2"
+        app:layout_constraintEnd_toStartOf="@+id/item_1_2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/tv_title1_1_moisture"
+            android:id="@+id/tv_title_1_1_moisture"
             android:layout_width="wrap_content"
             android:layout_height="29px"
             android:text="@string/home_item_moisture"
@@ -35,10 +35,10 @@
             android:layout_height="match_parent"
             android:layout_marginTop="46px"
             android:background="@color/white"
-            app:layout_constraintEnd_toEndOf="@id/item1_1"
-            app:layout_constraintStart_toStartOf="@id/item1_1"
-            app:layout_constraintTop_toBottomOf="@+id/tv_title1_1_moisture" />
-        
+            app:layout_constraintEnd_toEndOf="@id/item_1_1"
+            app:layout_constraintStart_toStartOf="@id/item_1_1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_1_1_moisture" />
+
         <TextView
             android:id="@+id/separator_horizontal_1_1"
             android:layout_width="match_parent"
@@ -47,14 +47,25 @@
             android:background="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintEnd_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_title1_1_moisture" />
+            app:layout_constraintTop_toBottomOf="@id/tv_title_1_1_moisture" />
+
+        <TextView
+            android:id="@+id/separator_horizontal2_1_1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="11px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitle_1_1_dm" />
 
 
         <TextView
-            android:id="@+id/tv_subtitle1_1_dm"
+            android:id="@+id/tv_subtitle_1_1_dm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/home_dm"
+            android:layout_marginTop="10px"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="38px"
             app:layout_constraintEnd_toStartOf="@+id/separator_vertical_1_1"
@@ -62,12 +73,13 @@
             app:layout_constraintTop_toBottomOf="@id/separator_horizontal_1_1" />
 
         <TextView
-            android:id="@+id/tv_subtitle1_1_as_is"
+            android:id="@+id/tv_subtitle_1_1_as_is"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/home_as_is"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="38px"
+            android:layout_marginTop="10px"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/separator_vertical_1_1"
             app:layout_constraintTop_toBottomOf="@id/separator_horizontal_1_1" />
@@ -76,40 +88,42 @@
             android:id="@+id/tv_home_1_1_na"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
             android:text="@string/home_na"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="38px"
             app:layout_constraintEnd_toStartOf="@+id/separator_vertical_1_1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_subtitle1_1_dm" />
+            app:layout_constraintTop_toBottomOf="@+id/separator_horizontal2_1_1" />
 
         <TextView
             android:id="@+id/tv_home_1_1_na2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
             android:text="@string/home_na"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="38px"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/separator_vertical_1_1"
-            app:layout_constraintTop_toBottomOf="@+id/tv_subtitle1_1_dm" />
+            app:layout_constraintTop_toBottomOf="@+id/separator_horizontal2_1_1" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/item1_2"
+        android:id="@+id/item_1_2"
         android:layout_width="0px"
         android:layout_height="241px"
         android:layout_marginTop="290px"
         android:layout_marginEnd="42px"
         android:background="@drawable/main_fragment_background_item"
-        app:layout_constraintEnd_toStartOf="@+id/item1_3"
-        app:layout_constraintStart_toEndOf="@+id/item1_1"
+        app:layout_constraintEnd_toStartOf="@+id/item_1_3"
+        app:layout_constraintStart_toEndOf="@+id/item_1_1"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/tw_title1_2_moisture"
+            android:id="@+id/tv_title_1_2_moisture"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="29px"
             android:text="@string/home_item_moisture"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="24px"
@@ -118,40 +132,99 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tw_subtitle1_2_dm"
+            android:id="@+id/separator_vertical_1_2"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="46px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="@id/item_1_2"
+            app:layout_constraintStart_toStartOf="@id/item_1_2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_1_2_moisture" />
+
+        <TextView
+            android:id="@+id/separator_horizontal_1_2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="17px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_1_2_moisture" />
+
+        <TextView
+            android:id="@+id/separator_horizontal2_1_2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="11px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitle_1_2_dm" />
+
+
+        <TextView
+            android:id="@+id/tv_subtitle_1_2_dm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/home_dm"
+            android:layout_marginTop="10px"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="38px"
-            app:layout_constraintStart_toStartOf="@+id/tw_title1_2_moisture"
-            app:layout_constraintTop_toBottomOf="@+id/tw_title1_2_moisture" />
+            app:layout_constraintEnd_toStartOf="@+id/separator_vertical_1_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separator_horizontal_1_2" />
 
         <TextView
-            android:id="@+id/tw_subtitle1_2_as_is"
+            android:id="@+id/tv_subtitle_1_2_as_is"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/home_as_is"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="38px"
-            app:layout_constraintStart_toEndOf="@+id/tw_subtitle1_2_dm"
-            app:layout_constraintTop_toBottomOf="@+id/tw_title1_2_moisture" />
+            android:layout_marginTop="10px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/separator_vertical_1_2"
+            app:layout_constraintTop_toBottomOf="@id/separator_horizontal_1_2" />
+
+        <TextView
+            android:id="@+id/tv_home_1_2_na"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="@string/home_na"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintEnd_toStartOf="@+id/separator_vertical_1_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separator_horizontal2_1_2" />
+
+        <TextView
+            android:id="@+id/tv_home_1_2_na2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="@string/home_na"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/separator_vertical_1_2"
+            app:layout_constraintTop_toBottomOf="@+id/separator_horizontal2_1_2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/item1_3"
+        android:id="@+id/item_1_3"
         android:layout_width="0px"
         android:layout_height="241px"
         android:layout_marginTop="290px"
         android:background="@drawable/main_fragment_background_item"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/item1_2"
+        app:layout_constraintStart_toEndOf="@+id/item_1_2"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/tw_title1_3_moisture"
+            android:id="@+id/tv_title_1_3_moisture"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="29px"
             android:text="@string/home_item_moisture"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="24px"
@@ -160,40 +233,405 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tw_subtitle1_3_dm"
+            android:id="@+id/separator_vertical_1_3"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="46px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="@id/item_1_3"
+            app:layout_constraintStart_toStartOf="@id/item_1_3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_1_3_moisture" />
+
+        <TextView
+            android:id="@+id/separator_horizontal_1_3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="17px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_1_3_moisture" />
+
+        <TextView
+            android:id="@+id/separator_horizontal2_1_3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="11px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitle_1_3_dm" />
+
+
+        <TextView
+            android:id="@+id/tv_subtitle_1_3_dm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/home_dm"
+            android:layout_marginTop="10px"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="38px"
-            app:layout_constraintStart_toStartOf="@+id/tw_title1_3_moisture"
-            app:layout_constraintTop_toBottomOf="@+id/tw_title1_3_moisture" />
+            app:layout_constraintEnd_toStartOf="@+id/separator_vertical_1_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separator_horizontal_1_3" />
 
         <TextView
-            android:id="@+id/tw_subtitle1_3_as_is"
+            android:id="@+id/tv_subtitle_1_3_as_is"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/home_as_is"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="38px"
-            app:layout_constraintStart_toEndOf="@+id/tw_subtitle1_3_dm"
-            app:layout_constraintTop_toBottomOf="@+id/tw_title1_3_moisture" />
+            android:layout_marginTop="10px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/separator_vertical_1_3"
+            app:layout_constraintTop_toBottomOf="@id/separator_horizontal_1_3" />
+
+        <TextView
+            android:id="@+id/tv_home_1_3_na"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="@string/home_na"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintEnd_toStartOf="@+id/separator_vertical_1_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separator_horizontal2_1_3" />
+
+        <TextView
+            android:id="@+id/tv_home_1_3_na2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="@string/home_na"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/separator_vertical_1_3"
+            app:layout_constraintTop_toBottomOf="@+id/separator_horizontal2_1_3" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/item2_1"
+        android:id="@+id/item_3_1"
         android:layout_width="0px"
         android:layout_height="241px"
         android:layout_marginTop="42px"
         android:layout_marginEnd="42px"
         android:background="@drawable/main_fragment_background_item"
-        app:layout_constraintEnd_toStartOf="@+id/item2_2"
+        app:layout_constraintEnd_toStartOf="@+id/item_3_2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/item1_1">
+        app:layout_constraintTop_toBottomOf="@id/item_2_1">
 
         <TextView
-            android:id="@+id/tv_title2_1_moisture"
+            android:id="@+id/tv_title_3_1_moisture"
+            android:layout_width="wrap_content"
+            android:layout_height="29px"
+            android:text="@string/home_item_moisture"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="24px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/separator_vertical_3_1"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="46px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="@id/item_3_1"
+            app:layout_constraintStart_toStartOf="@id/item_3_1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_3_1_moisture" />
+
+        <TextView
+            android:id="@+id/separator_horizontal_3_1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="17px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_3_1_moisture" />
+
+        <TextView
+            android:id="@+id/separator_horizontal2_3_1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="11px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitle_3_1_dm" />
+
+
+        <TextView
+            android:id="@+id/tv_subtitle_3_1_dm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_dm"
+            android:layout_marginTop="10px"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintEnd_toStartOf="@+id/separator_vertical_3_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separator_horizontal_3_1" />
+
+        <TextView
+            android:id="@+id/tv_subtitle_3_1_as_is"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_as_is"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            android:layout_marginTop="10px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/separator_vertical_3_1"
+            app:layout_constraintTop_toBottomOf="@id/separator_horizontal_3_1" />
+
+        <TextView
+            android:id="@+id/tv_home_3_1_na"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="@string/home_na"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintEnd_toStartOf="@+id/separator_vertical_3_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separator_horizontal2_3_1" />
+
+        <TextView
+            android:id="@+id/tv_home_3_1_na2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="@string/home_na"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/separator_vertical_3_1"
+            app:layout_constraintTop_toBottomOf="@+id/separator_horizontal2_3_1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_3_2"
+        android:layout_width="0px"
+        android:layout_height="241px"
+        android:layout_marginTop="42px"
+        android:layout_marginEnd="42px"
+        android:background="@drawable/main_fragment_background_item"
+        app:layout_constraintEnd_toStartOf="@+id/item3_3"
+        app:layout_constraintStart_toEndOf="@+id/item_3_1"
+        app:layout_constraintTop_toBottomOf="@id/item_2_2">
+
+        <TextView
+            android:id="@+id/tv_title_3_2_moisture"
+            android:layout_width="wrap_content"
+            android:layout_height="29px"
+            android:text="@string/home_item_moisture"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="24px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/separator_vertical_3_2"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="46px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="@id/item_3_2"
+            app:layout_constraintStart_toStartOf="@id/item_3_2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_3_2_moisture" />
+
+        <TextView
+            android:id="@+id/separator_horizontal_3_2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="17px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_3_2_moisture" />
+
+        <TextView
+            android:id="@+id/separator_horizontal2_3_2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="11px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitle_3_2_dm" />
+
+
+        <TextView
+            android:id="@+id/tv_subtitle_3_2_dm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_dm"
+            android:layout_marginTop="10px"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintEnd_toStartOf="@+id/separator_vertical_3_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separator_horizontal_3_2" />
+
+        <TextView
+            android:id="@+id/tv_subtitle_3_2_as_is"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_as_is"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            android:layout_marginTop="10px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/separator_vertical_3_2"
+            app:layout_constraintTop_toBottomOf="@id/separator_horizontal_3_2" />
+
+        <TextView
+            android:id="@+id/tv_home_3_2_na"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="@string/home_na"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintEnd_toStartOf="@+id/separator_vertical_3_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separator_horizontal2_3_2" />
+
+        <TextView
+            android:id="@+id/tv_home_3_2_na2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="@string/home_na"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/separator_vertical_3_2"
+            app:layout_constraintTop_toBottomOf="@+id/separator_horizontal2_3_2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item3_3"
+        android:layout_width="0px"
+        android:layout_height="241px"
+        android:layout_marginTop="42px"
+        android:background="@drawable/main_fragment_background_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_3_2"
+        app:layout_constraintTop_toBottomOf="@id/item2_3">
+
+        <TextView
+            android:id="@+id/tv_title_3_3_moisture"
+            android:layout_width="wrap_content"
+            android:layout_height="29px"
+            android:text="@string/home_item_moisture"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="24px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/separator_vertical_3_3"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="46px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="@id/item3_3"
+            app:layout_constraintStart_toStartOf="@id/item3_3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_3_3_moisture" />
+
+        <TextView
+            android:id="@+id/separator_horizontal_3_3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="17px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_3_3_moisture" />
+
+        <TextView
+            android:id="@+id/separator_horizontal2_3_3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="11px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitle_3_3_dm" />
+
+
+        <TextView
+            android:id="@+id/tv_subtitle_3_3_dm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_dm"
+            android:layout_marginTop="10px"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintEnd_toStartOf="@+id/separator_vertical_3_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separator_horizontal_3_3" />
+
+        <TextView
+            android:id="@+id/tv_subtitle_3_3_as_is"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_as_is"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            android:layout_marginTop="10px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/separator_vertical_3_3"
+            app:layout_constraintTop_toBottomOf="@id/separator_horizontal_3_3" />
+
+        <TextView
+            android:id="@+id/tv_home_3_3_na"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="@string/home_na"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintEnd_toStartOf="@+id/separator_vertical_3_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separator_horizontal2_3_3" />
+
+        <TextView
+            android:id="@+id/tv_home_3_3_na2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="@string/home_na"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/separator_vertical_3_3"
+            app:layout_constraintTop_toBottomOf="@+id/separator_horizontal2_3_3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_2_1"
+        android:layout_width="0px"
+        android:layout_height="241px"
+        android:layout_marginTop="42px"
+        android:layout_marginEnd="42px"
+        android:background="@drawable/main_fragment_background_item"
+        app:layout_constraintEnd_toStartOf="@+id/item_2_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_1_1">
+
+        <TextView
+            android:id="@+id/tv_title_2_1_moisture"
             android:layout_width="wrap_content"
             android:layout_height="29px"
             android:text="@string/home_item_moisture"
@@ -209,9 +647,9 @@
             android:layout_height="match_parent"
             android:layout_marginTop="46px"
             android:background="@color/white"
-            app:layout_constraintEnd_toEndOf="@id/item2_1"
-            app:layout_constraintStart_toStartOf="@id/item2_1"
-            app:layout_constraintTop_toBottomOf="@+id/tv_title2_1_moisture" />
+            app:layout_constraintEnd_toEndOf="@id/item_2_1"
+            app:layout_constraintStart_toStartOf="@id/item_2_1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_2_1_moisture" />
 
         <TextView
             android:id="@+id/separator_horizontal_2_1"
@@ -221,14 +659,25 @@
             android:background="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintEnd_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_title2_1_moisture" />
+            app:layout_constraintTop_toBottomOf="@id/tv_title_2_1_moisture" />
+
+        <TextView
+            android:id="@+id/separator_horizontal2_2_1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="11px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitle_2_1_dm" />
 
 
         <TextView
-            android:id="@+id/tv_subtitle2_1_dm"
+            android:id="@+id/tv_subtitle_2_1_dm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/home_dm"
+            android:layout_marginTop="10px"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="38px"
             app:layout_constraintEnd_toStartOf="@+id/separator_vertical_2_1"
@@ -236,12 +685,13 @@
             app:layout_constraintTop_toBottomOf="@id/separator_horizontal_2_1" />
 
         <TextView
-            android:id="@+id/tv_subtitle2_1_as_is"
+            android:id="@+id/tv_subtitle_2_1_as_is"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/home_as_is"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="38px"
+            android:layout_marginTop="10px"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/separator_vertical_2_1"
             app:layout_constraintTop_toBottomOf="@id/separator_horizontal_2_1" />
@@ -250,40 +700,42 @@
             android:id="@+id/tv_home_2_1_na"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
             android:text="@string/home_na"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="38px"
             app:layout_constraintEnd_toStartOf="@+id/separator_vertical_2_1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_subtitle2_1_dm" />
+            app:layout_constraintTop_toBottomOf="@+id/separator_horizontal2_2_1" />
 
         <TextView
             android:id="@+id/tv_home_2_1_na2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
             android:text="@string/home_na"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="38px"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/separator_vertical_2_1"
-            app:layout_constraintTop_toBottomOf="@+id/tv_subtitle2_1_dm" />
+            app:layout_constraintTop_toBottomOf="@+id/separator_horizontal2_2_1" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/item2_2"
+        android:id="@+id/item_2_2"
         android:layout_width="0px"
         android:layout_height="241px"
         android:layout_marginTop="42px"
         android:layout_marginEnd="42px"
         android:background="@drawable/main_fragment_background_item"
         app:layout_constraintEnd_toStartOf="@+id/item2_3"
-        app:layout_constraintStart_toEndOf="@+id/item2_1"
-        app:layout_constraintTop_toBottomOf="@id/item1_2">
+        app:layout_constraintStart_toEndOf="@+id/item_2_1"
+        app:layout_constraintTop_toBottomOf="@id/item_1_2">
 
         <TextView
-            android:id="@+id/tw_title2_2_moisture"
+            android:id="@+id/tv_title_2_2_moisture"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="29px"
             android:text="@string/home_item_moisture"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="24px"
@@ -292,24 +744,83 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tw_subtitle2_2_dm"
+            android:id="@+id/separator_vertical_2_2"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="46px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="@id/item_2_2"
+            app:layout_constraintStart_toStartOf="@id/item_2_2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_2_2_moisture" />
+
+        <TextView
+            android:id="@+id/separator_horizontal_2_2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="17px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_2_2_moisture" />
+
+        <TextView
+            android:id="@+id/separator_horizontal2_2_2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="11px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitle_2_2_dm" />
+
+
+        <TextView
+            android:id="@+id/tv_subtitle_2_2_dm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/home_dm"
+            android:layout_marginTop="10px"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="38px"
-            app:layout_constraintStart_toStartOf="@+id/tw_title2_2_moisture"
-            app:layout_constraintTop_toBottomOf="@+id/tw_title2_2_moisture" />
+            app:layout_constraintEnd_toStartOf="@+id/separator_vertical_2_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separator_horizontal_2_2" />
 
         <TextView
-            android:id="@+id/tw_subtitle2_2_as_is"
+            android:id="@+id/tv_subtitle_2_2_as_is"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/home_as_is"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="38px"
-            app:layout_constraintStart_toEndOf="@+id/tw_subtitle2_2_dm"
-            app:layout_constraintTop_toBottomOf="@+id/tw_title2_2_moisture" />
+            android:layout_marginTop="10px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/separator_vertical_2_2"
+            app:layout_constraintTop_toBottomOf="@id/separator_horizontal_2_2" />
+
+        <TextView
+            android:id="@+id/tv_home_2_2_na"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="@string/home_na"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintEnd_toStartOf="@+id/separator_vertical_2_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separator_horizontal2_2_2" />
+
+        <TextView
+            android:id="@+id/tv_home_2_2_na2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="@string/home_na"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/separator_vertical_2_2"
+            app:layout_constraintTop_toBottomOf="@+id/separator_horizontal2_2_2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -319,13 +830,13 @@
         android:layout_marginTop="42px"
         android:background="@drawable/main_fragment_background_item"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/item2_2"
-        app:layout_constraintTop_toBottomOf="@id/item1_3">
+        app:layout_constraintStart_toEndOf="@+id/item_2_2"
+        app:layout_constraintTop_toBottomOf="@id/item_1_3">
 
         <TextView
-            android:id="@+id/tw_title2_3_moisture"
+            android:id="@+id/tv_title_2_3_moisture"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="29px"
             android:text="@string/home_item_moisture"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="24px"
@@ -334,25 +845,86 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tw_subtitle2_3_dm"
+            android:id="@+id/separator_vertical_2_3"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="46px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="@id/item2_3"
+            app:layout_constraintStart_toStartOf="@id/item2_3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_2_3_moisture" />
+
+        <TextView
+            android:id="@+id/separator_horizontal_2_3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="17px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_2_3_moisture" />
+
+        <TextView
+            android:id="@+id/separator_horizontal2_2_3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="11px"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitle_2_3_dm" />
+
+
+        <TextView
+            android:id="@+id/tv_subtitle_2_3_dm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/home_dm"
+            android:layout_marginTop="10px"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="38px"
-            app:layout_constraintStart_toStartOf="@+id/tw_title2_3_moisture"
-            app:layout_constraintTop_toBottomOf="@+id/tw_title2_3_moisture" />
+            app:layout_constraintEnd_toStartOf="@+id/separator_vertical_2_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separator_horizontal_2_3" />
 
         <TextView
-            android:id="@+id/tw_subtitle2_3_as_is"
+            android:id="@+id/tv_subtitle_2_3_as_is"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/home_as_is"
             android:textColor="@color/colorHomeTextWhite"
             android:textSize="38px"
-            app:layout_constraintStart_toEndOf="@+id/tw_subtitle2_3_dm"
-            app:layout_constraintTop_toBottomOf="@+id/tw_title2_3_moisture" />
+            android:layout_marginTop="10px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/separator_vertical_2_3"
+            app:layout_constraintTop_toBottomOf="@id/separator_horizontal_2_3" />
+
+        <TextView
+            android:id="@+id/tv_home_2_3_na"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="@string/home_na"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintEnd_toStartOf="@+id/separator_vertical_2_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separator_horizontal2_2_3" />
+
+        <TextView
+            android:id="@+id/tv_home_2_3_na2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="@string/home_na"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/separator_vertical_2_3"
+            app:layout_constraintTop_toBottomOf="@+id/separator_horizontal2_2_3" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
     <Button
         android:id="@+id/sensor_status"
