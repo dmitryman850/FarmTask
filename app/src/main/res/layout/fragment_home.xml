@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorHomeBackgroundPicture">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_fragment_background_item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tw_title1_1_moisture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_item_moisture"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="24px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tw_subtitle1_1_dm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_dm"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintStart_toStartOf="@+id/tw_title1_1_moisture"
+            app:layout_constraintTop_toBottomOf="@+id/tw_title1_1_moisture" />
+
+        <TextView
+            android:id="@+id/tw_subtitle1_1_as_is"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_as_is"
+            android:textColor="@color/colorHomeTextWhite"
+            android:textSize="38px"
+            app:layout_constraintStart_toEndOf="@+id/tw_subtitle1_1_dm"
+            app:layout_constraintTop_toBottomOf="@+id/tw_title1_1_moisture" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

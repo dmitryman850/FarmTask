@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">FarmApplication</string>
-    
+
     <string name="start_title">PLEASE SELECT TO START WORK (ADDITIONAL)</string>
     <string name="start_subtitle_operator">Operator</string>
     <string name="start_subtitle_customer">Customer</string>
@@ -16,4 +16,17 @@
     <string name="start_item_name_of_a_field">Name Of A Field</string>
     <string name="start_item_field_n_1">Field N 1</string>
     <string name="start_button_name">Save</string>
+
+    <string name="main_item_moisture">MOISTURE</string>
+    <string name="main_dm">DM</string>
+    <string name="main_as_is">AS IS</string>
+    <string name="main_na">N/A</string>
+    <string name="main_sensor_status">SENSOR STATUS:</string>
+    <string name="main_ready">READY</string>
+    <string name="main_crop">CROP</string>
+    <string name="main_additional">ADDITIONAL</string>
+
+    <string name="bottom_navigation_archive">ARCHIVE</string>
+    <string name="bottom_navigation_home">HOME</string>
+    <string name="bottom_navigation_settings">SETTINGS</string>
 </resources>
