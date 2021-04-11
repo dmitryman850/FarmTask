@@ -20,7 +20,7 @@
     <FrameLayout
         android:id="@+id/container_activity_main2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0px"
         app:layout_constraintBottom_toTopOf="@+id/bnv_main2_fragment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
