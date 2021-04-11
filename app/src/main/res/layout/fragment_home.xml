@@ -928,7 +928,7 @@
 
     <Button
         android:id="@+id/sensor_status"
-        android:layout_width="wrap_content"
+        android:layout_width="350px"
         android:layout_height="wrap_content"
         android:layout_marginTop="47px"
         android:layout_marginEnd="36px"
@@ -951,8 +951,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="47px"
         android:layout_marginEnd="36px"
-        android:paddingStart="23px"
-        android:paddingEnd="23px"
+        android:paddingStart="0px"
+        android:paddingEnd="0px"
         android:text="@string/home_crop"
         android:textColor="@color/colorHomeTextBlack"
         android:textSize="28px"
@@ -984,7 +984,7 @@
         android:layout_width="100px"
         android:layout_height="wrap_content"
         android:layout_marginTop="47px"
-        android:drawable="@drawable/ic_home_network_no"
+        android:drawableEnd="@drawable/ic_home_network_no"
         android:paddingStart="23px"
         android:paddingEnd="23px"
         android:theme="@style/MyTheme"

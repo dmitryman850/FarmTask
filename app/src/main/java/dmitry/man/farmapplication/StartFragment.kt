@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.RadioGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 
 class StartFragment : Fragment() {
@@ -22,6 +21,15 @@ class StartFragment : Fragment() {
     private var idRadioGroupCustomer: Int = 0
     private var idRadioGroupFarm: Int = 0
     private var idRadioGroupField: Int = 0
+    private var rbNameOfOperator: RadioButton? = null
+    private var rbOtherName: RadioButton? = null
+    private var rbNameOfCustomer: RadioButton? = null
+    private var rbAnotherNameOf: RadioButton? = null
+    private var rbFarmName: RadioButton? = null
+    private var rbNameOfAFarm: RadioButton? = null
+    private var rbFieldName: RadioButton? = null
+    private var rbNameOfAField: RadioButton? = null
+    private var rbFieldN1: RadioButton? = null
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -41,6 +49,15 @@ class StartFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        rbNameOfOperator = view.findViewById(R.id.r_button_name_of_operator)
+        rbOtherName = view.findViewById(R.id.r_button_other_name)
+        rbNameOfCustomer = view.findViewById(R.id.r_button_name_of_customer)
+        rbAnotherNameOf = view.findViewById(R.id.r_button_another_name_of)
+        rbFarmName = view.findViewById(R.id.r_button_farm_name)
+        rbNameOfAFarm = view.findViewById(R.id.r_button_name_of_a_farm)
+        rbFieldName = view.findViewById(R.id.r_button_field_name)
+        rbNameOfAField = view.findViewById(R.id.r_button_name_of_a_field)
+        rbFieldN1 = view.findViewById(R.id.r_button_field_n1)
         val b: Bundle? = arguments
         idRadioGroupOperator = b?.getInt("Operator", 0) ?: 0
         idRadioGroupCustomer = b?.getInt("Customer", 0) ?: 0
@@ -49,52 +66,44 @@ class StartFragment : Fragment() {
 
         when (idRadioGroupOperator) {
             0 -> {
-                val nameOperator = view.findViewById<RadioButton>(R.id.r_button_name_of_operator)
-                nameOperator.isChecked = true
+                rbNameOfOperator?.isChecked = true
             }
             1 -> {
-                val otherName = view.findViewById<RadioButton>(R.id.r_button_other_name)
-                otherName.isChecked = true
+                rbOtherName?.isChecked = true
             }
             else -> {
             }
         }
         when (idRadioGroupCustomer) {
             0 -> {
-                val nameOfCustomer = view.findViewById<RadioButton>(R.id.r_button_name_of_customer)
-                nameOfCustomer.isChecked = true
+
+                rbNameOfCustomer?.isChecked = true
             }
             1 -> {
-                val anotherNameOf = view.findViewById<RadioButton>(R.id.r_button_another_name_of)
-                anotherNameOf.isChecked = true
+                rbAnotherNameOf?.isChecked = true
             }
             else -> {
             }
         }
         when (idRadioGroupFarm) {
             0 -> {
-                val farmName = view.findViewById<RadioButton>(R.id.r_button_farm_name)
-                farmName.isChecked = true
+                rbFarmName?.isChecked = true
             }
             1 -> {
-                val nameOfAFarm = view.findViewById<RadioButton>(R.id.r_button_name_of_a_farm)
-                nameOfAFarm.isChecked = true
+                rbNameOfAFarm?.isChecked = true
             }
             else -> {
             }
         }
         when (idRadioGroupField) {
             0 -> {
-                val fieldName = view.findViewById<RadioButton>(R.id.r_button_field_name)
-                fieldName.isChecked = true
+                rbFieldName?.isChecked = true
             }
             1 -> {
-                val nameOfAField = view.findViewById<RadioButton>(R.id.r_button_name_of_a_field)
-                nameOfAField.isChecked = true
+                rbNameOfAField?.isChecked = true
             }
             2 -> {
-                val fieldN1 = view.findViewById<RadioButton>(R.id.r_button_field_n1)
-                fieldN1.isChecked = true
+                rbFieldN1?.isChecked = true
             }
             else -> {
             }

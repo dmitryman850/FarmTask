@@ -21,7 +21,7 @@
     <string name="home_dm">DM</string>
     <string name="home_as_is">AS IS</string>
     <string name="home_na">N/A</string>
-    <string name="home_sensor_status">SENSOR STATUS:</string>
+    <string name="home_sensor_status">SENSOR STATUS: READY</string>
     <string name="home_ready">READY</string>
     <string name="home_crop">CROP +</string>
     <string name="home_additional">ADDITIONAL +</string>
